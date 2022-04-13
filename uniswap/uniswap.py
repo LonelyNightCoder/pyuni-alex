@@ -39,7 +39,7 @@ from .constants import (
 )
 
 logger = logging.getLogger(__name__)
-
+NULLAddress = "0x0000000000000000000000000000000000000000"
 
 class Uniswap:
     """
@@ -887,7 +887,7 @@ class Uniswap:
                         input_token,
                         self.get_weth_address(),
                         fee,
-                        ETH_ADDRESS,
+                        NULLAddress,
                         self._deadline(),
                         qty,
                         amount_in_max,
